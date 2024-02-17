@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root {
+    --main-color: #449E67;
+    --secundary-color: #171F26;
+    --tertiary-color: rgb(45, 5, 82);
+
+    --main-font: 'Krona One', sans-serif;
+    --secundary-font: 'Montserrat', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--main-color);
+    color: var(--secundary-color);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 10%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--secundary-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--tertiary-color);
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.apresentacao {
+    padding: 4% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--secundary-font);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--secundary-font);
+}
+
+#titulo-destaque {
+    color: var(--tertiary-color);
+}
+
+.apresentacao__botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__botoes__subtitulo{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.apresentacao__botoes__botao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 60%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--secundary-color); 
+    font-family: var(--secundary-font);
+    font-weight: 600;
+    border: 2px solid;
+    border-color: var(--tertiary-color);
+}
+
+.apresentacao__botoes__botao img {
+    width: 30px;
+}
+
+.apresentacao__botoes__botao:hover {
+    background-color: #3d8a5a;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.rodape {
+    padding: 24px;
+    text-align: center;
+    color: var(--main-color);
+    background-color: var(--secundary-color);
+    font-family: var(--secundary-font);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
